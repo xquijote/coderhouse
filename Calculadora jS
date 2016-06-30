@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Calculadora JS</title>
+</head>
+<body>
+
+<script type="text/javascript">
+operation=-1;
+while (operation != 0) 
+{
+   var operation=prompt("ELIGE LA OPERACIÓN \n\n\n0: FINALIZAR CALCULADORA\n1: SUMA\n2: RESTA\n3: MULTIPLICACIÓN\n4: DIVISION","");
+  //addition, subtraction, multiplication, or division
+  if (operation>0 && operation<5)
+  {
+  var num1=parseInt(prompt("Digital el primer número.",""));
+  var num2=parseInt(prompt("Digita el segundo número.",""));
+  if (operation==1) alert("La suma es "+(num1+num2));
+  if (operation==2) alert("la diferencia es "+(num1-num2));
+  if (operation==3) alert("El resultado es"+(num1*num2));
+  if (operation==4) alert("El resultado es "+(num1/num2));
+  }
+  
+}
+</script>
